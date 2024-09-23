@@ -5,9 +5,9 @@ import CustomCursor from '@/components/CustomCursor';
 
 export const metadata = {
   title: 'Laras N | Developer',
-  description: 'Personal portfolio website',
+  description: `Welcome to Laras' space where I share my work, ideas, and projects. Let's connect!`,
   icons: {
-    icon: '/icon.png',
+    icon: ['/favicon.ico?v=4']
   },
 };
 
