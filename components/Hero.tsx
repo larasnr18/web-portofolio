@@ -33,7 +33,7 @@ export default function Hero() {
         </motion.p>
       </div>
       <motion.p 
-        className="mt-4 text-md text-textSecondary leading-7 max-w-md"
+        className="mt-4 text-md text-textSecondary leading-7 lg:max-w-md md:max-w-lg"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}  
@@ -46,7 +46,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.5 }} 
       >
-        <p className="max-w-xl mx-auto text-sm text-textSecondary">
+        <p className="max-w-xl text-sm text-textSecondary">
           Interested in working together? Feel free to reach out to me!
         </p>
         <a href="mailto:work.larasn@gmail.com" className="text-sm mt-2 font-semibold hover:font-bold inline-block bg-primary text-black py-1 px-3 rounded-lg">

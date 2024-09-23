@@ -6,6 +6,9 @@ import CustomCursor from '@/components/CustomCursor';
 export const metadata = {
   title: 'Laras N | Developer',
   description: 'Personal portfolio website',
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 const inter = Inter({
