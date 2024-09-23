@@ -4,7 +4,7 @@ import { Inter } from '@next/font/google';
 import CustomCursor from '@/components/CustomCursor';
 
 export const metadata = {
-  title: 'Laras N | Developer',
+  title: 'Laras N | Tech & Data Enthusiast',
   description: `Welcome to Laras' space where I share my work, ideas, and projects. Let's connect!`,
   icons: {
     icon: ['/favicon.ico?v=4']
