@@ -16,29 +16,29 @@ export default function Hero() {
           Laras N
         </motion.p>
         <motion.h4
-          className="text-2xl text-textSecondary font-semibold"
+          className="text-xl text-textSecondary font-semibold"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1}}
         >
-          Web Developer
+          Tech & Data Enthusiast
         </motion.h4>
         <motion.p
-          className="text-xl text-textSecondary font-semibold mt-4  max-w-md"
+          className="text-md text-textSecondary font-semibold mt-4  max-w-md"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          Crafting seamless, innovative, and user-centric digital solutions.
+          Crafting <span className='font-extrabold text-black'>smooth</span>, <span className='font-extrabold text-black'>reliable</span>, and <span className='font-extrabold text-black'>enjoyable</span> digital experiences through <span className='font-extrabold text-black'>tech</span> innovation and <span className='font-extrabold text-black'>data</span> insights.
         </motion.p>
       </div>
       <motion.p 
-        className="mt-4 text-md text-textSecondary leading-7 lg:max-w-md md:max-w-lg"
+        className="mt-4 text-sm text-textSecondary leading-7 lg:max-w-md md:max-w-lg"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}  
       >
-        Passionate web developer with over 3 years of experience in crafting full-stack applications, creating engaging data visualizations, and automating processes. I excel in utilizing modern web technologies and frameworks to build scalable and efficient solutions. Whether managing CI/CD pipelines or collaborating in agile teams, I am dedicated to delivering top-notch software. Known for my innovative approach and problem-solving skills, I thrive in both solo and team environments, constantly seeking new challenges and opportunities to grow.
+        As a tech and data enthusiast with over <span className='font-semibold text-black'>3 years</span> of experience, I craft <span className='font-semibold text-black'>full-stack applications</span> and create engaging <span className='font-semibold text-black'>data visualizations</span> that drive insights. I love using modern web technologies and frameworks to build <span className='font-semibold text-black'>scalable solutions</span> while automating processes to make life easier. Whether I am managing CI/CD pipelines or collaborating with agile teams, I am all about delivering quality software. Known for my <span className='font-semibold text-black'>innovative mindset</span> and <span className='font-semibold text-black'>problem-solving skills</span>, I thrive in both solo and team settings, always eager to tackle new challenges and learn along the way.
       </motion.p>
       <motion.div 
         className='ml-1 mt-8'
@@ -47,7 +47,7 @@ export default function Hero() {
         transition={{ duration: 1, delay: 1.5 }} 
       >
         <p className="max-w-xl text-sm text-textSecondary">
-          Interested in working together? Feel free to reach out to me!
+          Interested in <span className='font-semibold text-black'>working together</span>? Feel free to <span className='font-semibold text-black'>reach out</span> to me!
         </p>
         <a href="mailto:work.larasn@gmail.com" className="text-sm mt-2 font-semibold hover:font-bold inline-block bg-primary text-black py-1 px-3 rounded-lg">
           Say Hello
