@@ -88,7 +88,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   className="absolute -left-1 top-1/2 transform -translate-y-1/2 text-white bg-black/50 p-2 rounded-full hover:bg-black/70 z-10"
                   onClick={handlePrevImage}
                 >
-                  {/* &larr; */}
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                   </svg>
@@ -99,7 +98,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   className="absolute -right-1 top-1/2 transform -translate-y-1/2 text-white bg-black/50 p-2 rounded-full hover:bg-black/70 z-10"
                   onClick={handleNextImage}
                 >
-                  {/* &rarr; */} 
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="size-4">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                   </svg>
@@ -116,7 +114,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                         width={100}
                         height={60}
                         className={`w-24 h-16 object-cover rounded-md border-2 ${activeImageIndex === index ? 'border-primary' : 'border-transparent'}`}
-                        onClick={() => setActiveImageIndex(index)} // Update gambar utama saat thumbnail di klik
+                        onClick={() => setActiveImageIndex(index)}
                       />
                     </div>
                   ))}
@@ -136,7 +134,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         </div>
       </motion.div>
 
-      {/* Modal untuk gambar */}
       {isImageModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div

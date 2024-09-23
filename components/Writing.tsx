@@ -5,7 +5,7 @@ import moment from 'moment';
 interface MediumPost {
   title: string;
   link: string;
-  pubDate: string; // or Date if you prefer to convert it
+  pubDate: string;
 }
 const formatDate = (dateString: string): string => {
   const date = moment(dateString, 'ddd, DD MMM YYYY HH:mm:ss ZZ').format('MMM D, YYYY');

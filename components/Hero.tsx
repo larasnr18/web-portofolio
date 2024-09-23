@@ -21,7 +21,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1}}
         >
-          Software Engineer & Web Developer
+          Web Developer
         </motion.h4>
         <motion.p
           className="text-xl text-textSecondary font-semibold mt-4  max-w-md"
@@ -38,15 +38,8 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}  
       >
-        Passionate software developer with over 3 years of experience in crafting full-stack applications, creating engaging data visualizations, and automating processes. I excel in utilizing modern web technologies and frameworks to build scalable and efficient solutions. Whether managing CI/CD pipelines or collaborating in agile teams, I am dedicated to delivering top-notch software. Known for my innovative approach and problem-solving skills, I thrive in both solo and team environments, constantly seeking new challenges and opportunities to grow.
+        Passionate web developer with over 3 years of experience in crafting full-stack applications, creating engaging data visualizations, and automating processes. I excel in utilizing modern web technologies and frameworks to build scalable and efficient solutions. Whether managing CI/CD pipelines or collaborating in agile teams, I am dedicated to delivering top-notch software. Known for my innovative approach and problem-solving skills, I thrive in both solo and team environments, constantly seeking new challenges and opportunities to grow.
       </motion.p>
-      {/* <nav>
-        <ul className="space-y-6 text-left mt-6">
-          <li><Link href="#about">About</Link></li>
-          <li><Link href="#experience">Experience</Link></li>
-          <li><Link href="#projects">Projects</Link></li>
-        </ul>
-      </nav> */}
       <motion.div 
         className='ml-1 mt-8'
         initial={{ opacity: 0, y: 20 }}
