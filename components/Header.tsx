@@ -5,7 +5,7 @@ export default function Header() {
   const [activeTab, setActiveTab] = useState<string>('experience');
 
   const handleClick = (section: string) => {
-    setActiveTab(section); // Update tab yang aktif
+    setActiveTab(section);
   };
 
   return (

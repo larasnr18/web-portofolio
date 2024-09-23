@@ -4,15 +4,14 @@ import { Inter } from '@next/font/google';
 import CustomCursor from '@/components/CustomCursor';
 
 export const metadata = {
-  title: 'Portfolio | Laras N',
+  title: 'Laras N | Developer',
   description: 'Personal portfolio website',
 };
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter', // Menggunakan CSS variable untuk font inter
+  variable: '--font-inter'
 });
-
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

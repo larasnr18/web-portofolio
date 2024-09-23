@@ -5,7 +5,7 @@ export default function Contact() {
         <p className="max-w-xl mx-auto text-textSecondary">
           Interested in working together? Feel free to reach out to me!
         </p>
-        <a href="mailto:your.email@example.com" className="mt-5 inline-block bg-primary text-black py-3 px-6 rounded-lg">
+        <a href="mailto:work.larasn@gmail.com" className="mt-5 inline-block bg-primary text-black py-3 px-6 rounded-lg">
           Say Hello
         </a>
       </section>
