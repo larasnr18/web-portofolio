@@ -4,6 +4,7 @@ import Projects from '@/components/Projects';
 import Career from '@/components/Career';
 import Header from '@/components/Header';
 import MediumPosts from '@/components/Writing';
+import Certificate from '@/components/Certificate';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -21,8 +22,8 @@ export default function Home() {
             {/* <About /> */}
             <Career />
             <Projects />
+            <Certificate />
             <MediumPosts />
-
           </motion.div>
         </div>
       </div>

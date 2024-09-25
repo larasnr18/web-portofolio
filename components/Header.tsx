@@ -54,6 +54,13 @@ export default function Header() {
           </li>
           <li
             className={`pb-2 transition ease-in-out hover:border-b border-yellow-900 hover:-translate-y-1 hover:scale-105 duration-300 ${
+              activeTab === 'certificate' ? 'border-b' : ''
+            }`}
+          >
+            <Link href="#certificate" className=' text-yellow-900' onClick={() => handleClick('certificate')}>Certificate</Link>
+          </li>
+          <li
+            className={`pb-2 transition ease-in-out hover:border-b border-yellow-900 hover:-translate-y-1 hover:scale-105 duration-300 ${
               activeTab === 'writing' ? 'border-b' : ''
             }`}
           >
