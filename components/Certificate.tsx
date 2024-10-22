@@ -54,8 +54,8 @@ export default function Certificate() {
       className="mb-16 pt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-40"
       aria-label="Selected projects"
     >
-      <div className="sticky top-0 left-0 p-4 w-screen bg-background/75 backdrop-blur z-50 lg:hidden">
-        <h1 className="text-xl font-bold text-yellow-900">Certificate</h1>
+      <div className="sticky top-0 left-0 p-4 w-screen bg-background/75 dark:bg-neutral-800/75 backdrop-blur z-50 lg:hidden">
+        <h1 className="text-xl font-bold text-yellow-900 dark:text-orange-300">Certificate</h1>
       </div>
       <div className="px-4">
         <ul className="group/list">
@@ -64,7 +64,7 @@ export default function Certificate() {
               <div className="group relative grid items-center transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                 <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:shadow-[inset_0_0_1px_1px_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                 <header
-                  className="z-10 text-xs font-semibold uppercase tracking-wide text-textPrimary sm:col-span-2"
+                  className="z-10 text-xs font-semibold uppercase tracking-wide text-textPrimary dark:text-white sm:col-span-2"
                   aria-label={certificate.dateIssued}
                 >
                   {certificate.dateIssued}
@@ -73,7 +73,7 @@ export default function Certificate() {
                   <h3 className="font-medium leading-snug text-textSecondary">
                     <div>
                       <a
-                        className="inline-flex items-baseline font-medium leading-tight text-textPrimary hover:text-yellow-900 focus-visible:text-yellow-900 group/link text-base"
+                        className="inline-flex items-baseline font-medium leading-tight text-textPrimary dark:text-white hover:text-yellow-900 hover:dark:text-orange-300 focus-visible:text-yellow-900 dark:focus-visible:text-orange-300 group/link text-base"
                         href={certificate.url}
                         target="_blank"
                         rel="noreferrer noopener"

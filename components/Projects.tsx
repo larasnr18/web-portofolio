@@ -55,8 +55,8 @@ export default function Projects() {
       id="projects" 
       className="mb-16 pt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-40" aria-label="Selected projects"
     >
-      <div className="sticky top-0 left-0 p-4 w-screen bg-background/75 backdrop-blur z-50 lg:hidden">
-        <h1 className="text-xl font-bold text-yellow-900">Projects</h1>
+      <div className="sticky top-0 left-0 p-4 w-screen bg-background/75 dark:bg-neutral-800/75 backdrop-blur z-50 lg:hidden">
+        <h1 className="text-xl font-bold text-yellow-900 dark:text-orange-300">Projects</h1>
       </div>
       <div className="px-4">
         <ul className="group/list">
@@ -66,7 +66,7 @@ export default function Projects() {
               <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:shadow-[inset_0_0_1px_1px_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
               <div className="z-10 sm:order-2 sm:col-span-6">
                 <h3>
-                  <div className="inline-flex items-baseline font-medium leading-tight text-textPrimary hover:text-yellow-900 focus-visible:text-yellow-900 group/link text-base cursor-pointer" aria-label={`${project.title} (opens in a new tab)`}>
+                  <div className="inline-flex items-baseline font-medium leading-tight text-textPrimary dark:text-white hover:text-yellow-900 hover:dark:text-orange-300 focus-visible:text-yellow-900 group/link text-base cursor-pointer" aria-label={`${project.title} (opens in a new tab)`}>
                     <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                     <span>{project.title} 
                       <span className="inline-block">
@@ -77,7 +77,7 @@ export default function Projects() {
                     </span>
                   </div>
                 </h3>
-                <p className="mt-2 text-sm leading-normal">{project.description}</p>
+                <p className="mt-2 text-sm text-textPrimary dark:text-white leading-normal">{project.description}</p>
               </div>
               <Image
                 src={project.imageUrls[0]}
