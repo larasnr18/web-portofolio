@@ -40,8 +40,8 @@ export default function Career() {
       className="mb-16 pt-6 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-40"
       aria-label="Work experience"
     >
-      <div className="sticky top-0 left-0 p-4 w-screen bg-background/75 backdrop-blur z-50 lg:hidden">
-        <h1 className="text-xl font-bold text-yellow-900">Experience</h1>
+      <div className="sticky top-0 left-0 p-4 w-screen bg-background/75 dark:bg-neutral-800/75 backdrop-blur z-50 lg:hidden">
+        <h1 className="text-xl font-bold text-yellow-900 dark:text-orange-300">Experience</h1>
       </div>
       <div className="px-4">
         <ol className="group/list">
@@ -50,7 +50,7 @@ export default function Career() {
             <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
               <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:shadow-[inset_0_0_1px_1px_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
               <header
-                className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-textPrimary sm:col-span-2"
+                className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-textPrimary dark:text-white sm:col-span-2"
                 aria-label={`${event.yearStart} to ${event.yearEnd}`}
               >
                 {event.yearStart} - {event.yearEnd}
@@ -59,7 +59,7 @@ export default function Career() {
                 <h3 className="font-medium leading-snug text-textSecondary">
                   <div>
                     <a
-                      className="inline-flex items-baseline font-medium leading-tight text-textPrimary hover:text-yellow-900 focus-visible:text-yellow-900 group/link text-base"
+                      className="inline-flex items-baseline font-medium leading-tight text-textPrimary hover:text-yellow-900 focus-visible:text-yellow-900 dark:text-white hover:dark:text-orange-300 group/link text-base"
                       href={event.url}
                       target="_blank"
                       rel="noreferrer noopener"
@@ -88,11 +88,11 @@ export default function Career() {
                     </a>
                   </div>
                 </h3>
-                <p className="mt-2 text-sm leading-normal hover:text-white">{event.description}</p>
+                <p className="mt-2 text-sm leading-normal text-black dark:text-white hover:text-white">{event.description}</p>
                 <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                   {event.techStack.map((tech, index) => (
                     <li key={index} className="mr-1.5 mt-2">
-                      <div className="flex items-center rounded-full bg-yellow-900/10 px-3 py-1 text-xs font-medium leading-5 text-yellow-900 ">
+                      <div className="flex items-center rounded-full bg-yellow-900/10 px-3 py-1 text-xs font-medium leading-5 text-yellow-900 dark:text-orange-300">
                         {tech}
                       </div>
                     </li>
@@ -106,7 +106,7 @@ export default function Career() {
         </ol>
         <div className="mt-12 text-right">
           <a
-            className="inline-flex items-baseline text-sm bg-primary text-black py-1 px-3 font-semibold hover:font-bold rounded-lg group/link"
+            className="inline-flex items-baseline text-sm bg-primary text-black dark:text-white py-1 px-3 font-semibold hover:font-bold rounded-lg group/link"
             href="/resume.pdf"
             target="_blank"
             rel="noreferrer noopener"

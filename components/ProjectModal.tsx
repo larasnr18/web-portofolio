@@ -39,33 +39,33 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   };
 
   return (
-    <div className="fixed inset-0 flex items-center backdrop-blur-sm w-full justify-center text-center z-50">
+    <div className="fixed inset-0 flex items-center backdrop-blur-sm w-full justify-center text-center z-[99]">
       <div
         className="fixed inset-0 bg-black opacity-50"
         onClick={onClose}
       />
       <motion.div
-        className="bg-background p-8 rounded-lg relative max-w-screen-lg w-full"
+        className="bg-background dark:bg-neutral-800 p-8 rounded-lg relative max-w-screen-lg w-full"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
       >
         <button
-          className="absolute top-2 right-4 text-textPrimary"
+          className="absolute top-2 right-4 text-textPrimary dark:text-white"
           onClick={onClose}
         >
           ×
         </button>
         <div className='flex flex-wrap'>
           <div className='lg:w-1/2 pr-3 text-left'>
-            <h2 className="text-3xl font-semibold mb-4">{project.title}</h2>
-            <p className="text-textSecondary font-medium">{project.description}</p>
+            <h2 className="text-3xl font-semibold dark:text-orange-300 mb-4">{project.title}</h2>
+            <p className="text-textSecondary dark:text-white font-medium">{project.description}</p>
             <section className="mt-8">
               <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech, index) => (
                   <div 
                     key={index}
-                    className="flex items-center rounded-full bg-yellow-900/10 px-3 py-1 text-xs font-medium leading-5 text-yellow-900 ">
+                    className="flex items-center rounded-full bg-yellow-900/10 px-3 py-1 text-xs font-medium leading-5 text-yellow-900 dark:text-orange-300">
                     {tech}
                 </div>
                 ))}
